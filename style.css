@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Desktop-Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (max-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url(https://th.bing.com/th/id/OIP.Su_U9uvEpyeTNd3Eh8zzTQHaPO?rs=1&pid=ImgDetMain);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}
+.weatherform {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.cityinput {
+    padding: 20px;
+    border: 2px solid #ff4d4d;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+#btn { 
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-style: italic;
+    background-color: rgb(179, 75, 210);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: rgba(178, 75, 210, 0.9);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(80, 80, 219, 0.686), rgba(227, 174, 75, 0.763));
+    padding: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    min-width: 300px;
+    max-width: 90%;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.card h2 {
+    color: #ffffff;
+}
+
+.citydisplay, .tempdisplay {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.humiditydisplay {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.descdisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.emojidisplay {
+    margin: 0;
+    font-size: 6rem;
+}
+
+.errordisplay {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .citydisplay, .tempdisplay {
+        font-size: 2.5rem;
+    }
+
+    .emojidisplay {
+        font-size: 5rem;
+    }
+
+    .descdisplay {
+        font-size: 1.5rem;
+    }
+
+    .humiditydisplay {
+        font-size: 1.2rem;
+    }
+
+    #btn {
+        width: 80%;
+    }
+
+    .cityinput {
+        width: 100%;
+    }
+   
+}
